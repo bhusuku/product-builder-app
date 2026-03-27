@@ -1,6 +1,4 @@
-import { motion } from 'framer-motion';
-
-export default function Header({ onLogoClick, showBack, onBack }) {
+export default function Header({ onLogoClick, showBack, onBack, showSectionNav = true }) {
   return (
     <header className="sticky top-0 z-30 bg-surface border-b-2 border-ink">
       <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
@@ -27,19 +25,21 @@ export default function Header({ onLogoClick, showBack, onBack }) {
           </button>
         </div>
 
-        <nav className="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-wide text-ink-secondary">
-          <a href="#model" className="hover:text-primary transition-colors">
-            How it works
-          </a>
-          <a href="#roles" className="hover:text-primary transition-colors">
-            Roles
-          </a>
-          <a href="#impact" className="hover:text-primary transition-colors">
-            Impact
-          </a>
-        </nav>
+        {showSectionNav ? (
+          <nav className="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-wide text-ink-secondary">
+            <a href="#model" className="hover:text-primary transition-colors">
+              How it works
+            </a>
+            <a href="#roles" className="hover:text-primary transition-colors">
+              Roles
+            </a>
+            <a href="#impact" className="hover:text-primary transition-colors">
+              Impact
+            </a>
+          </nav>
+        ) : null}
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 shrink-0">
           <a
             href="#cta"
             className="hidden sm:inline-flex items-center px-4 py-2 text-xs font-bold uppercase tracking-wide text-white bg-primary border-2 border-ink shadow-[4px_4px_0_0_#000] hover:bg-primary-dark transition-colors"

@@ -17,6 +17,7 @@ function App() {
     <div className="min-h-screen">
       <Header
         showBack={Boolean(selectedRole)}
+        showSectionNav={!selectedRole}
         onBack={goHome}
         onLogoClick={() => {
           if (selectedRole) goHome();
