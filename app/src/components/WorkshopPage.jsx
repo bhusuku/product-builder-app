@@ -31,7 +31,7 @@ export default function WorkshopPage({ onBack }) {
             <iframe
               title="Заявка на workshop"
               src={embedUrl}
-              className="w-full h-[min(760px,85vh)] border-0 block"
+              className="w-full h-[min(780px,85vh)] border-0 block"
             />
           </div>
         ) : (
