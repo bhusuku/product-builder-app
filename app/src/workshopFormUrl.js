@@ -1,5 +1,9 @@
-/** URL встраивания Google Form (?embedded=true). Задаётся в .env — см. scripts/google-apps-script/create-workshop-form.gs */
+/** Встраивание Google Form (?embedded=true). Переопределение: VITE_WORKSHOP_FORM_EMBED_URL в .env */
+const DEFAULT_WORKSHOP_FORM_EMBED_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLScbJlNI40CdngNqyy6X3ukDaFo83GUSoeYyj08Ne8B72W6IqQ/viewform?embedded=true';
+
 export function getWorkshopFormEmbedUrl() {
-  const url = import.meta.env.VITE_WORKSHOP_FORM_EMBED_URL;
-  return typeof url === 'string' && url.trim().length > 0 ? url.trim() : '';
+  const fromEnv = import.meta.env.VITE_WORKSHOP_FORM_EMBED_URL;
+  if (typeof fromEnv === 'string' && fromEnv.trim().length > 0) return fromEnv.trim();
+  return DEFAULT_WORKSHOP_FORM_EMBED_URL;
 }
