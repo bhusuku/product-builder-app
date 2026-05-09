@@ -22,7 +22,7 @@ export default function WorkshopPage({ onBack }) {
             Заявка на workshop
           </h1>
           <p className="mt-3 text-sm md:text-base text-ink-secondary max-w-xl leading-relaxed">
-            Заполните форму ниже — мы свяжемся с вами, чтобы обсудить формат и сроки.
+            Leave your contact details — we&apos;ll respond and align on the workshop goals and dates.
           </p>
         </div>
 

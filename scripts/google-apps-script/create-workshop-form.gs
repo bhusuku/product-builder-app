@@ -14,7 +14,7 @@
  */
 function createWorkshopRequestForm() {
   var form = FormApp.create('Product Builder — заявка на workshop');
-  form.setDescription('Оставьте контакты — мы ответим и согласуем формат workshop.');
+  form.setDescription('Leave your contact details — we\'ll respond and align on the workshop goals and dates.');
 
   form.addTextItem().setTitle('Имя').setRequired(true);
 
