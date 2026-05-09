@@ -41,7 +41,7 @@ export default function Header({ onLogoClick, showBack, onBack, showSectionNav =
 
         <div className="flex items-center gap-3 shrink-0">
           <a
-            href="#cta"
+            href="mailto:a.rutkovsky@gmail.com?subject=Product%20Builder%20Workshop"
             className="hidden sm:inline-flex items-center px-4 py-2 text-xs font-bold uppercase tracking-wide text-white bg-primary border-2 border-ink shadow-[4px_4px_0_0_#000] hover:bg-primary-dark transition-colors"
           >
             Workshop

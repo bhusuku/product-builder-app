@@ -32,7 +32,7 @@ export default function CTASection() {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <a
-            href="mailto:hello@example.com?subject=Product%20Builder%20Workshop"
+            href="mailto:a.rutkovsky@gmail.com?subject=Product%20Builder%20Workshop"
             className="inline-flex items-center gap-2 px-6 py-3.5 bg-white text-primary text-xs font-bold uppercase tracking-wide border-2 border-ink shadow-[6px_6px_0_0_#000] hover:bg-white/95 transition-colors w-full sm:w-auto justify-center"
           >
             Request a workshop
