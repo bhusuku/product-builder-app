@@ -54,7 +54,7 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="mailto:a.rutkovsky@gmail.com?subject=Product%20Builder%20Workshop"
+              href="#workshop"
               className="inline-flex items-center px-5 py-3 text-xs font-bold uppercase tracking-wide text-ink bg-surface border-2 border-ink shadow-[6px_6px_0_0_#000] hover:bg-surface-alt transition-colors"
             >
               Request a workshop
